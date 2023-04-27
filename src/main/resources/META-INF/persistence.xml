@@ -7,10 +7,10 @@
     <session-factory>
 
         <!-- Connection settings -->
+        <property name="hibernate.connection.url"></property>
+        <property name="hibernate.connection.username"></property>
+        <property name="hibernate.connection.password"></property>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/student</property>
-        <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">postgres</property>
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
@@ -20,9 +20,6 @@
 
         <!-- Update database on startup -->
         <property name="hibernate.hbm2ddl.auto">update</property>
-
-        <!-- Annotated entity classes -->
-        <mapping class="tutorial.hibernate.postgresql.Student"/>
 
     </session-factory>
 </hibernate-configuration>
